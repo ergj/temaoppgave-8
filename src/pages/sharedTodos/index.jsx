@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+import SiteNavigation from '../../components/SiteNavigation';
 
 const sharedTodos = () => {
 
     return(
     <div>
       
-      <a href="../App.js">
-        <p>Trykk her for å komme til din egen liste</p>
-      </a>
+      <SiteNavigation />
       
-      <h1>Velkommen!</h1>
-      
-      <div>
-        <p>Dagens vær:</p>
-      </div>
+      <h1>Deres felles huskeliste!</h1>
+
+      <form>
+        <input 
+          placeholder="Hva skal du huske?"
+        />
+        <button type="submit">Legg til</button>
+      </form>
       
     </div>
     )
