@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SiteNavigation from '../../components/SiteNavigation';
 
 const sharedTodos = () => {
@@ -6,16 +6,21 @@ const sharedTodos = () => {
     return(
     <div>
       
-      <SiteNavigation />
+      <header>
+        <SiteNavigation />
+      </header>
       
-      <h1>Deres felles huskeliste!</h1>
+      <main>
+        <div className="task-header">
+          <h1>Deres felles huskeliste!</h1>
 
-      <form>
-        <input 
-          placeholder="Hva skal du huske?"
-        />
-        <button type="submit">Legg til</button>
-      </form>
+          <button>Legg til gjøremål</button>
+        </div>
+
+        <div className="task-container">
+          
+        </div>
+      </main>
       
     </div>
     )

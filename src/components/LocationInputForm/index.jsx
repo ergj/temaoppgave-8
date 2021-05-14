@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../styles/formStyle.css';
 
 const LocationInputForm = (props) => {
 
@@ -9,11 +8,11 @@ const LocationInputForm = (props) => {
             <form onSubmit={props.loadweather}>
                 <div>
                     <div>
-                        <input type="text" name="city" autoComplete="off" placeholder="By" />
+                        <input type="text" name="city" autoComplete="off" placeholder="Skriv inn by" />
                     </div>
 
                     <div>
-                        <input type="text" name="country" autoComplete="off" placeholder="Land" />
+                        <input type="text" name="country" autoComplete="off" placeholder="Skriv inn land" />
                     </div>
 
                     <div>

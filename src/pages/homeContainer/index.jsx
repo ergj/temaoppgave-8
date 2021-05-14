@@ -4,7 +4,47 @@ import LocationInputForm from '../../components/LocationInputForm';
 import SiteNavigation from '../../components/SiteNavigation';
 import Weather from '../../components/weatherAPI';
 
+import styled from 'styled-components';
+import Container from '../../components/Container';
+
 const API_key = "2e044b70ca3ee8db8bc21f062008028e";
+
+const WeatherStyle = styled(Container) `
+    main {
+        padding: 50px;
+        box-sizing: border-box;
+        font-weight: 600;
+        max-width: 500px;
+        width: 100%;
+        min-height: 400px;
+        box-shadow: 0 2px 6px #555;
+        margin: 50px auto;
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 800;
+        }
+        form {
+            width: 100%;
+            font-size: 1.5rem;
+            height: 40px;
+            margin: 20px 0;
+            display: flex;
+            input, button {
+                flex: 3;
+                margin: 0 5px;
+            }
+            button {
+                flex: 1;
+                background-color: #555;
+                color: white;
+                letter-spacing: 2px;
+                cursor: pointer;
+            }
+        }
+    }
+`
 
 class homeContainer extends React.Component {
     constructor() {
@@ -51,11 +91,21 @@ class homeContainer extends React.Component {
     render() {
         return(
             <>
-                <SiteNavigation />
-                <h1>Velkommen!</h1>
-                <h1>Se nåværende vær:</h1>
-                <LocationInputForm loadweather={this.getWeather} error={this.state.error} />
-                <Weather city={this.state.city} country={this.state.country} temp={this.state.temp} description={this.state.description} />
+                <header>
+                    <SiteNavigation />
+                </header>
+                
+                <WeatherStyle>
+                    <main>
+                        
+                            <h1>Velkommen!</h1>
+                            <h1>Se nåværende vær:</h1>
+                        
+                            <LocationInputForm loadweather={this.getWeather} error={this.state.error} />
+                            <Weather city={this.state.city} country={this.state.country} temp={this.state.temp} description={this.state.description} />
+                    </main>
+                </WeatherStyle>
+                
             </>
         );
     };

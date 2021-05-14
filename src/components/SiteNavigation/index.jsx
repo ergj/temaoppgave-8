@@ -6,7 +6,7 @@ import Container from '../Container';
 
 export const SiteNavigationBase = styled(Container)`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding: 1.5rem;
   ul {
