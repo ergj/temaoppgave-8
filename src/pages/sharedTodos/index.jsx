@@ -1,5 +1,8 @@
 import React from 'react';
-import SiteNavigation from '../../components/SiteNavigation';
+import styled from 'styled-components';
+
+import SiteNavigation from '../../components/GlobalComponents/SiteNavigation';
+import Container from '../../components/GlobalComponents/Container';
 
 const sharedTodos = () => {
 

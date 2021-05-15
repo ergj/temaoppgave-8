@@ -1,10 +1,12 @@
 import React from 'react';
-import SiteNavigation from '../../components/SiteNavigation';
 import styled from 'styled-components';
-import Container from '../../components/Container';
-import TodoInputForm from '../../components/TodoInputForm';
-import TodoList from '../../components/TodoList';
-import {DataProvider} from '../../components/DataProvider';
+
+import SiteNavigation from '../../components/GlobalComponents/SiteNavigation';
+import Container from '../../components/GlobalComponents/Container';
+
+import TodoInputForm from '../../components/LocalTodosComponents/TodoInputForm';
+import TodoList from '../../components/LocalTodosComponents/TodoList';
+import {DataProvider} from '../../components/LocalTodosComponents/DataProvider';
 
 export const LocalTodosStyle = styled(Container) `
     main {

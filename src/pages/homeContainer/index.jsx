@@ -1,11 +1,11 @@
 import React from 'react';
-import LocationInputForm from '../../components/LocationInputForm';
-
-import SiteNavigation from '../../components/SiteNavigation';
-import Weather from '../../components/weatherAPI';
-
 import styled from 'styled-components';
-import Container from '../../components/Container';
+
+import SiteNavigation from '../../components/GlobalComponents/SiteNavigation';
+import Container from '../../components/GlobalComponents/Container';
+
+import LocationInputForm from '../../components/HomePageComponents/LocationInputForm';
+import Weather from '../../components/HomePageComponents/weatherAPI';
 
 const API_key = "2e044b70ca3ee8db8bc21f062008028e";
 
