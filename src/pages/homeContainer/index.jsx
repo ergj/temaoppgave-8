@@ -14,9 +14,9 @@ const WeatherStyle = styled(Container) `
         padding: 50px;
         box-sizing: border-box;
         font-weight: 600;
-        max-width: 500px;
+        max-width: 600px;
         width: 100%;
-        min-height: 400px;
+        min-height: 500px;
         box-shadow: 0 2px 6px #555;
         margin: 50px auto;
         h1 {
@@ -27,7 +27,7 @@ const WeatherStyle = styled(Container) `
         }
         form {
             width: 100%;
-            font-size: 1.5rem;
+            font-size: 2rem;
             height: 40px;
             margin: 20px 0;
             display: flex;
@@ -99,7 +99,6 @@ class homeContainer extends React.Component {
                     <main>
                         
                             <h1>Velkommen!</h1>
-                            <h1>Se nåværende vær:</h1>
                         
                             <LocationInputForm loadweather={this.getWeather} error={this.state.error} />
                             <Weather city={this.state.city} country={this.state.country} temp={this.state.temp} description={this.state.description} />

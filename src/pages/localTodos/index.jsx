@@ -13,9 +13,9 @@ export const LocalTodosStyle = styled(Container) `
         padding: 50px;
         box-sizing: border-box;
         font-weight: 600;
-        max-width: 500px;
+        max-width: 600px;
         width: 100%;
-        min-height: 400px;
+        min-height: 500px;
         box-shadow: 0 2px 6px #555;
         margin: 50px auto;
         h1 {
