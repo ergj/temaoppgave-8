@@ -9,15 +9,20 @@ import TodoList from '../../components/LocalTodosComponents/TodoList';
 import {DataProvider} from '../../components/LocalTodosComponents/DataProvider';
 
 export const LocalTodosStyle = styled(Container) `
+    * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
     main {
-        padding: 50px;
+        padding: 3.125rem;
         box-sizing: border-box;
         font-weight: 600;
-        max-width: 600px;
+        max-width: 37.5rem;
         width: 100%;
-        min-height: 500px;
+        min-height: 31.25rem;
         box-shadow: 0 2px 6px #555;
-        margin: 50px auto;
+        margin: 3.125rem auto;
         h1 {
             text-align: center;
             text-transform: uppercase;
@@ -26,8 +31,8 @@ export const LocalTodosStyle = styled(Container) `
         }
         form {
             width: 100%;
-            height: 40px;
-            margin: 20px 0;
+            height: 2.5rem;
+            margin: 1.25rem 0;
             display: flex;
             input, button {
                 flex: 3;

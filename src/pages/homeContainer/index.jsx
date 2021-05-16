@@ -10,6 +10,9 @@ import Weather from '../../components/HomePageComponents/weatherAPI';
 const API_key = "2e044b70ca3ee8db8bc21f062008028e";
 
 const WeatherStyle = styled(Container) `
+    * {
+        margin: 0;
+    }
     main {
         padding: 50px;
         box-sizing: border-box;

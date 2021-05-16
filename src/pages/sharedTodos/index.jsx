@@ -11,6 +11,11 @@ import { auth } from '../../components/SharedTodoComponents/Firebase/firebase';
 import SharedTodoComponent from '../../components/SharedTodoComponents/SharedTodoComponent';
 
 export const SharedTodosStyle = styled(Container) `
+    * {
+      margin: 0;
+      box-sizing: border-box;
+      padding: 0;
+    }
     main {
         padding: 50px;
         box-sizing: border-box;
@@ -28,8 +33,8 @@ export const SharedTodosStyle = styled(Container) `
         }
         form {
             width: 100%;
-            height: 40px;
-            margin: 20px 0;
+            height: 2.5rem;
+            margin: 1.25rem 0;
             display: flex;
             input, button {
                 flex: 3;

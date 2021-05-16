@@ -52,7 +52,7 @@ const SharedTodoItem = ({ id, complete, text }) => {
     return (
             <li key={id}>
                 <label htmlFor={id} className={`sharedTodoItem ${complete ? "active" : ""}`}>
-                    <input type="checkbox" onChange={() => onCompleteSharedTodo(id, complete)} checked={sharedTodosRef.complete}/>
+                    <input type="checkbox" id={id} onChange={() => onCompleteSharedTodo(id, complete)} checked={sharedTodosRef.complete}/>
                     {text}
                 </label>
                 <button onClick={() => onDeleteSharedTodo(id)}>Fjern</button>
