@@ -1,9 +1,7 @@
-# react-starter
+# Temaoppgave 8
 
-Et enkelt og greit starterprosjekt for å lage React-apper uten å bruke create-react-app. Gir deg mer oversikt og kontroll over hva som faktisk skjer i prosessen når vi lager React-apper, og lar deg styre byggeprosessen i Webpack i større grad.
+Denne løsningen er en produktivitets-applikasjon. Brukeren kan se live værmelding hvor som helst i verden, ha og bruke sin egen todo-applikasjon, og dele en todo-applikasjon med flere via Google Firebase.
 
-## Komme i gang
-+ Klon prosjektet lokalt med `npx degit vegar-codes/react-starter <mappenavn>`.
+## Hvordan bruke applikasjonen
 + Kjør `npm install` for å installere alle avhengigheter.
 + Kjør `npm start` for å sette i gang en lokal utviklingsserver med utviklingsbygg.
-+ Kjør `npm run build` for å lage et produksjonsklart bygg. Det ferdige bygget legges i ./build om ikke du endrer konfigurasjonen.
